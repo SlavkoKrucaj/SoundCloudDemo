@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'SoundcloudDemo' target in the 'SoundcloudDemo' project
+//
+
+#import <Availability.h>
+
+#define SOUNDCLOUD_CLIENT_ID     @"07f66efc44f28702807db3972b315c3e"
+#define SOUNDCLOUD_CLIENT_SECRET @"378559b6f7833c937fa1fb5614dc26df"
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
