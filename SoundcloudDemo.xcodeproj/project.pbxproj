@@ -15,6 +15,35 @@
 		9F5B09EB162F1A03007171C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5B09C6162F1A02007171C6 /* Foundation.framework */; };
 		9F5B09F3162F1A03007171C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F5B09F1162F1A03007171C6 /* InfoPlist.strings */; };
 		9F5B09F6162F1A03007171C6 /* SoundcloudDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5B09F5162F1A03007171C6 /* SoundcloudDemoTests.m */; };
+		9F6594D816309679009375BC /* logout_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594D516309679009375BC /* logout_button.png */; };
+		9F6594D916309679009375BC /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594D616309679009375BC /* menu.png */; };
+		9F6594DA16309679009375BC /* navigationBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594D716309679009375BC /* navigationBar.png */; };
+		9F6594DE163096F6009375BC /* logout_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594DB163096F6009375BC /* logout_button@2x.png */; };
+		9F6594DF163096F6009375BC /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594DC163096F6009375BC /* menu@2x.png */; };
+		9F6594E0163096F6009375BC /* navigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594DD163096F6009375BC /* navigationBar@2x.png */; };
+		9F6594E316309D49009375BC /* navigationBarLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594E116309D49009375BC /* navigationBarLandscape.png */; };
+		9F6594E416309D49009375BC /* navigationBarLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594E216309D49009375BC /* navigationBarLandscape@2x.png */; };
+		9F6594E71630A6F7009375BC /* test_waveform.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594E51630A6F7009375BC /* test_waveform.png */; };
+		9F6594E81630A6F7009375BC /* test_waveform@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594E61630A6F7009375BC /* test_waveform@2x.png */; };
+		9F6594EB1630A7A7009375BC /* SoundCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6594EA1630A7A7009375BC /* SoundCloudViewController.m */; };
+		9F6594F01630B05E009375BC /* BurstMyBubble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594EF1630B05E009375BC /* BurstMyBubble.ttf */; };
+		9F6594F41630B49B009375BC /* SoundCloudCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6594F31630B49B009375BC /* SoundCloudCell.m */; };
+		9F6594F81630B87C009375BC /* image_holder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594F61630B87C009375BC /* image_holder.png */; };
+		9F6594F91630B87C009375BC /* image_holder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594F71630B87C009375BC /* image_holder@2x.png */; };
+		9F6594FD1630BC31009375BC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594FB1630BC31009375BC /* background.png */; };
+		9F6594FE1630BC31009375BC /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6594FC1630BC31009375BC /* background@2x.png */; };
+		9F65951D1630C1E6009375BC /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65950B1630C1E6009375BC /* AFHTTPClient.m */; };
+		9F65951E1630C1E6009375BC /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65950D1630C1E6009375BC /* AFHTTPRequestOperation.m */; };
+		9F65951F1630C1E6009375BC /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65950F1630C1E6009375BC /* AFImageRequestOperation.m */; };
+		9F6595201630C1E6009375BC /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6595111630C1E6009375BC /* AFJSONRequestOperation.m */; };
+		9F6595211630C1E6009375BC /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6595131630C1E6009375BC /* AFNetworkActivityIndicatorManager.m */; };
+		9F6595221630C1E6009375BC /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6595161630C1E6009375BC /* AFPropertyListRequestOperation.m */; };
+		9F6595231630C1E6009375BC /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6595181630C1E6009375BC /* AFURLConnectionOperation.m */; };
+		9F6595241630C1E6009375BC /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65951A1630C1E6009375BC /* AFXMLRequestOperation.m */; };
+		9F6595251630C1E6009375BC /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65951C1630C1E6009375BC /* UIImageView+AFNetworking.m */; };
+		9F6595291630C549009375BC /* SoundCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6595271630C549009375BC /* SoundCloud.xcdatamodeld */; };
+		9F65952C1630C5BD009375BC /* SoundCloudItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65952B1630C5BD009375BC /* SoundCloudItem.m */; };
+		9F65952E1630C629009375BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F65952D1630C628009375BC /* CoreData.framework */; };
 		9F93B1CF162F1BCA0070406C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B1BF162F1BCA0070406C /* AppDelegate.m */; };
 		9F93B1D0162F1BCA0070406C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B1C3162F1BCA0070406C /* ViewController.m */; };
 		9F93B1D1162F1BCA0070406C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93B1C4162F1BCA0070406C /* Default-568h@2x.png */; };
@@ -122,6 +151,48 @@
 		9F5B09F2162F1A03007171C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9F5B09F4162F1A03007171C6 /* SoundcloudDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundcloudDemoTests.h; sourceTree = "<group>"; };
 		9F5B09F5162F1A03007171C6 /* SoundcloudDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundcloudDemoTests.m; sourceTree = "<group>"; };
+		9F6594D516309679009375BC /* logout_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout_button.png; sourceTree = "<group>"; };
+		9F6594D616309679009375BC /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		9F6594D716309679009375BC /* navigationBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBar.png; sourceTree = "<group>"; };
+		9F6594DB163096F6009375BC /* logout_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout_button@2x.png"; sourceTree = "<group>"; };
+		9F6594DC163096F6009375BC /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		9F6594DD163096F6009375BC /* navigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBar@2x.png"; sourceTree = "<group>"; };
+		9F6594E116309D49009375BC /* navigationBarLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBarLandscape.png; sourceTree = "<group>"; };
+		9F6594E216309D49009375BC /* navigationBarLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBarLandscape@2x.png"; sourceTree = "<group>"; };
+		9F6594E51630A6F7009375BC /* test_waveform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_waveform.png; sourceTree = "<group>"; };
+		9F6594E61630A6F7009375BC /* test_waveform@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_waveform@2x.png"; sourceTree = "<group>"; };
+		9F6594E91630A7A7009375BC /* SoundCloudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudViewController.h; sourceTree = "<group>"; };
+		9F6594EA1630A7A7009375BC /* SoundCloudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudViewController.m; sourceTree = "<group>"; };
+		9F6594EF1630B05E009375BC /* BurstMyBubble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurstMyBubble.ttf; sourceTree = "<group>"; };
+		9F6594F21630B49B009375BC /* SoundCloudCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudCell.h; sourceTree = "<group>"; };
+		9F6594F31630B49B009375BC /* SoundCloudCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudCell.m; sourceTree = "<group>"; };
+		9F6594F61630B87C009375BC /* image_holder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_holder.png; sourceTree = "<group>"; };
+		9F6594F71630B87C009375BC /* image_holder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_holder@2x.png"; sourceTree = "<group>"; };
+		9F6594FB1630BC31009375BC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		9F6594FC1630BC31009375BC /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		9F65950A1630C1E6009375BC /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		9F65950B1630C1E6009375BC /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		9F65950C1630C1E6009375BC /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		9F65950D1630C1E6009375BC /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		9F65950E1630C1E6009375BC /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		9F65950F1630C1E6009375BC /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		9F6595101630C1E6009375BC /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		9F6595111630C1E6009375BC /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		9F6595121630C1E6009375BC /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		9F6595131630C1E6009375BC /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		9F6595141630C1E6009375BC /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		9F6595151630C1E6009375BC /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		9F6595161630C1E6009375BC /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		9F6595171630C1E6009375BC /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		9F6595181630C1E6009375BC /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		9F6595191630C1E6009375BC /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		9F65951A1630C1E6009375BC /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		9F65951B1630C1E6009375BC /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		9F65951C1630C1E6009375BC /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		9F6595281630C549009375BC /* SoundCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundCloud.xcdatamodel; sourceTree = "<group>"; };
+		9F65952A1630C5BD009375BC /* SoundCloudItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudItem.h; sourceTree = "<group>"; };
+		9F65952B1630C5BD009375BC /* SoundCloudItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudItem.m; sourceTree = "<group>"; };
+		9F65952D1630C628009375BC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9F93B1BE162F1BCA0070406C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F93B1BF162F1BCA0070406C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9F93B1C2162F1BCA0070406C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -153,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F65952E1630C629009375BC /* CoreData.framework in Frameworks */,
 				9F93B5F0162F4D7F0070406C /* libOHAttributedLabel.a in Frameworks */,
 				9F93B5E6162F4D4F0070406C /* libJSONKit.a in Frameworks */,
 				9F93B5CC162F4CAF0070406C /* libOAuth2Client.a in Frameworks */,
@@ -190,6 +262,7 @@
 				9F5B09EE162F1A03007171C6 /* SoundcloudDemoTests */,
 				9F5B09C3162F1A02007171C6 /* Frameworks */,
 				9F5B09C1162F1A02007171C6 /* Products */,
+				9F6594D316309679009375BC /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +278,7 @@
 		9F5B09C3162F1A02007171C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F65952D1630C628009375BC /* CoreData.framework */,
 				9F93B43B162F445E0070406C /* Security.framework */,
 				9F93B25F162F40D60070406C /* CoreText.framework */,
 				9F93B25D162F3EE70070406C /* CoreLocation.framework */,
@@ -238,9 +312,101 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9F6594D316309679009375BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F6594FA1630BC31009375BC /* background */,
+				9F6594F51630B87C009375BC /* images */,
+				9F6594EF1630B05E009375BC /* BurstMyBubble.ttf */,
+				9F6594E51630A6F7009375BC /* test_waveform.png */,
+				9F6594E61630A6F7009375BC /* test_waveform@2x.png */,
+				9F6594D416309679009375BC /* navigation_bar */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F6594D416309679009375BC /* navigation_bar */ = {
+			isa = PBXGroup;
+			children = (
+				9F6594E116309D49009375BC /* navigationBarLandscape.png */,
+				9F6594E216309D49009375BC /* navigationBarLandscape@2x.png */,
+				9F6594DB163096F6009375BC /* logout_button@2x.png */,
+				9F6594DC163096F6009375BC /* menu@2x.png */,
+				9F6594DD163096F6009375BC /* navigationBar@2x.png */,
+				9F6594D516309679009375BC /* logout_button.png */,
+				9F6594D616309679009375BC /* menu.png */,
+				9F6594D716309679009375BC /* navigationBar.png */,
+			);
+			path = navigation_bar;
+			sourceTree = "<group>";
+		};
+		9F6594F11630B155009375BC /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9F6594F21630B49B009375BC /* SoundCloudCell.h */,
+				9F6594F31630B49B009375BC /* SoundCloudCell.m */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		9F6594F51630B87C009375BC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9F6594F61630B87C009375BC /* image_holder.png */,
+				9F6594F71630B87C009375BC /* image_holder@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		9F6594FA1630BC31009375BC /* background */ = {
+			isa = PBXGroup;
+			children = (
+				9F6594FB1630BC31009375BC /* background.png */,
+				9F6594FC1630BC31009375BC /* background@2x.png */,
+			);
+			path = background;
+			sourceTree = "<group>";
+		};
+		9F6595091630C1E6009375BC /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9F65950A1630C1E6009375BC /* AFHTTPClient.h */,
+				9F65950B1630C1E6009375BC /* AFHTTPClient.m */,
+				9F65950C1630C1E6009375BC /* AFHTTPRequestOperation.h */,
+				9F65950D1630C1E6009375BC /* AFHTTPRequestOperation.m */,
+				9F65950E1630C1E6009375BC /* AFImageRequestOperation.h */,
+				9F65950F1630C1E6009375BC /* AFImageRequestOperation.m */,
+				9F6595101630C1E6009375BC /* AFJSONRequestOperation.h */,
+				9F6595111630C1E6009375BC /* AFJSONRequestOperation.m */,
+				9F6595121630C1E6009375BC /* AFNetworkActivityIndicatorManager.h */,
+				9F6595131630C1E6009375BC /* AFNetworkActivityIndicatorManager.m */,
+				9F6595141630C1E6009375BC /* AFNetworking.h */,
+				9F6595151630C1E6009375BC /* AFPropertyListRequestOperation.h */,
+				9F6595161630C1E6009375BC /* AFPropertyListRequestOperation.m */,
+				9F6595171630C1E6009375BC /* AFURLConnectionOperation.h */,
+				9F6595181630C1E6009375BC /* AFURLConnectionOperation.m */,
+				9F6595191630C1E6009375BC /* AFXMLRequestOperation.h */,
+				9F65951A1630C1E6009375BC /* AFXMLRequestOperation.m */,
+				9F65951B1630C1E6009375BC /* UIImageView+AFNetworking.h */,
+				9F65951C1630C1E6009375BC /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		9F6595261630C532009375BC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9F6595271630C549009375BC /* SoundCloud.xcdatamodeld */,
+				9F65952A1630C5BD009375BC /* SoundCloudItem.h */,
+				9F65952B1630C5BD009375BC /* SoundCloudItem.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		9F93B1BB162F1BCA0070406C /* SoundcloudDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F93B1CA162F1BCA0070406C /* MainStoryboard.storyboard */,
 				9F93B5A7162F4C4A0070406C /* Vendor */,
 				9F93B1BC162F1BCA0070406C /* Classes */,
 				9F93B1C4162F1BCA0070406C /* Default-568h@2x.png */,
@@ -254,6 +420,8 @@
 		9F93B1BC162F1BCA0070406C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9F6595261630C532009375BC /* CoreData */,
+				9F6594F11630B155009375BC /* CustomComponents */,
 				9F93B1BD162F1BCA0070406C /* Application */,
 				9F93B1C0162F1BCA0070406C /* Controllers */,
 			);
@@ -282,6 +450,8 @@
 			children = (
 				9F93B1C2162F1BCA0070406C /* ViewController.h */,
 				9F93B1C3162F1BCA0070406C /* ViewController.m */,
+				9F6594E91630A7A7009375BC /* SoundCloudViewController.h */,
+				9F6594EA1630A7A7009375BC /* SoundCloudViewController.m */,
 			);
 			path = EntryPoint;
 			sourceTree = "<group>";
@@ -290,7 +460,6 @@
 			isa = PBXGroup;
 			children = (
 				9F93B1C8162F1BCA0070406C /* InfoPlist.strings */,
-				9F93B1CA162F1BCA0070406C /* MainStoryboard.storyboard */,
 				9F93B1CC162F1BCA0070406C /* main.m */,
 				9F93B1CD162F1BCA0070406C /* SoundcloudDemo-Info.plist */,
 				9F93B1CE162F1BCA0070406C /* SoundcloudDemo-Prefix.pch */,
@@ -301,6 +470,7 @@
 		9F93B5A7162F4C4A0070406C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9F6595091630C1E6009375BC /* AFNetworking */,
 				9F93B5E7162F4D710070406C /* OHAttributedLabel.xcodeproj */,
 				9F93B5D1162F4D3B0070406C /* JSONKit.xcodeproj */,
 				9F93B5CF162F4CF40070406C /* SoundCloud.bundle */,
@@ -521,6 +691,21 @@
 				9F93B1D5162F1BCA0070406C /* MainStoryboard.storyboard in Resources */,
 				9F93B1D7162F1BCA0070406C /* SoundcloudDemo-Info.plist in Resources */,
 				9F93B5D0162F4CF40070406C /* SoundCloud.bundle in Resources */,
+				9F6594D816309679009375BC /* logout_button.png in Resources */,
+				9F6594D916309679009375BC /* menu.png in Resources */,
+				9F6594DA16309679009375BC /* navigationBar.png in Resources */,
+				9F6594DE163096F6009375BC /* logout_button@2x.png in Resources */,
+				9F6594DF163096F6009375BC /* menu@2x.png in Resources */,
+				9F6594E0163096F6009375BC /* navigationBar@2x.png in Resources */,
+				9F6594E316309D49009375BC /* navigationBarLandscape.png in Resources */,
+				9F6594E416309D49009375BC /* navigationBarLandscape@2x.png in Resources */,
+				9F6594E71630A6F7009375BC /* test_waveform.png in Resources */,
+				9F6594E81630A6F7009375BC /* test_waveform@2x.png in Resources */,
+				9F6594F01630B05E009375BC /* BurstMyBubble.ttf in Resources */,
+				9F6594F81630B87C009375BC /* image_holder.png in Resources */,
+				9F6594F91630B87C009375BC /* image_holder@2x.png in Resources */,
+				9F6594FD1630BC31009375BC /* background.png in Resources */,
+				9F6594FE1630BC31009375BC /* background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +743,19 @@
 				9F93B1CF162F1BCA0070406C /* AppDelegate.m in Sources */,
 				9F93B1D0162F1BCA0070406C /* ViewController.m in Sources */,
 				9F93B1D6162F1BCA0070406C /* main.m in Sources */,
+				9F6594EB1630A7A7009375BC /* SoundCloudViewController.m in Sources */,
+				9F6594F41630B49B009375BC /* SoundCloudCell.m in Sources */,
+				9F65951D1630C1E6009375BC /* AFHTTPClient.m in Sources */,
+				9F65951E1630C1E6009375BC /* AFHTTPRequestOperation.m in Sources */,
+				9F65951F1630C1E6009375BC /* AFImageRequestOperation.m in Sources */,
+				9F6595201630C1E6009375BC /* AFJSONRequestOperation.m in Sources */,
+				9F6595211630C1E6009375BC /* AFNetworkActivityIndicatorManager.m in Sources */,
+				9F6595221630C1E6009375BC /* AFPropertyListRequestOperation.m in Sources */,
+				9F6595231630C1E6009375BC /* AFURLConnectionOperation.m in Sources */,
+				9F6595241630C1E6009375BC /* AFXMLRequestOperation.m in Sources */,
+				9F6595251630C1E6009375BC /* UIImageView+AFNetworking.m in Sources */,
+				9F6595291630C549009375BC /* SoundCloud.xcdatamodeld in Sources */,
+				9F65952C1630C5BD009375BC /* SoundCloudItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +800,7 @@
 				9F93B1CB162F1BCA0070406C /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -754,6 +953,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9F6595271630C549009375BC /* SoundCloud.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9F6595281630C549009375BC /* SoundCloud.xcdatamodel */,
+			);
+			currentVersion = 9F6595281630C549009375BC /* SoundCloud.xcdatamodel */;
+			path = SoundCloud.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9F5B09B7162F1A02007171C6 /* Project object */;
 }

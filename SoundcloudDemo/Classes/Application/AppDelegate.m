@@ -15,7 +15,7 @@
 {
     [SCSoundCloud  setClientID:SOUNDCLOUD_CLIENT_ID
                         secret:SOUNDCLOUD_CLIENT_SECRET
-                   redirectURL:[NSURL URLWithString:@"http://www.google.com"]];
+                   redirectURL:[NSURL URLWithString:@"demo://oauth2"]];
     return YES;
 }
 							
