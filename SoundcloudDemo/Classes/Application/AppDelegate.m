@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SCUI.h"
+#import "DocumentHandler.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,7 @@
     [SCSoundCloud  setClientID:SOUNDCLOUD_CLIENT_ID
                         secret:SOUNDCLOUD_CLIENT_SECRET
                    redirectURL:[NSURL URLWithString:@"demo://oauth2"]];
+
     return YES;
 }
 							

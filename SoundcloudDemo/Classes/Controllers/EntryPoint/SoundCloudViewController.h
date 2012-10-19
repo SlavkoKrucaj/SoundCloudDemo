@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreDataTableViewController.h"
 
-@interface SoundCloudViewController : UITableViewController
+@interface SoundCloudViewController : CoreDataTableViewController
 
 @end

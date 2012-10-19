@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SoundCloudItem.h"
 
 @interface SoundCloudCell : UITableViewCell
 
@@ -17,5 +18,6 @@
 @property (nonatomic, weak) IBOutlet UIView *waveformWrapper;
 
 - (void)setArtworkForUrl:(NSString *)url;
+- (void)setWaveformForUrl:(NSString *)url forSoundCloudItem:(SoundCloudItem *)item;
 
 @end

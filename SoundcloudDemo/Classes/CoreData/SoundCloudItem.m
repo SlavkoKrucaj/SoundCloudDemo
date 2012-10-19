@@ -11,10 +11,12 @@
 
 @implementation SoundCloudItem
 
-@dynamic name;
-@dynamic date;
 @dynamic artworkUrl;
-@dynamic waveformImage;
+@dynamic date;
 @dynamic favorite;
+@dynamic name;
+@dynamic uniqueId;
+@dynamic waveformImage;
+@dynamic waveformUrl;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "SoundCloudCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "UIImage+Crop.h"
 
 @implementation SoundCloudCell
 
@@ -30,4 +31,22 @@
 - (void)setArtworkForUrl:(NSString *)url {
     [self.artwork setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"image_holder"]];
 }
+
+- (void)setWaveformForUrl:(NSString *)url forSoundCloudItem:(SoundCloudItem *)item {
+    
+    if (item.waveformImage) {
+        self.waveform.image = item.waveformImage;
+        
+        [UIView animateWithDuration:1 animations:^{
+            CGRect newFrame = self.waveformWrapper.frame;
+            newFrame.size.width = self.frame.size.width;
+            self.waveformWrapper.frame = newFrame;
+        }];
+    } else {
+        NSLog(@"Fotka je nil");
+    }
+
+}
+
+
 @end
