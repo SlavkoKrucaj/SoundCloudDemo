@@ -151,7 +151,8 @@
     
     //pagination
     NSUInteger numberOfObjects = [[[self.fetchedResultsController sections] objectAtIndex:indexPath.section] numberOfObjects];
-    if (indexPath.row > numberOfObjects - 2) {
+    //dodaj limit/2 toliki je offset za paginaciju
+    if (indexPath.row == numberOfObjects - 2) {
         [SoundCloudDataFetch fetchData];
         NSLog(@"Dohvacam podatke");
     }
