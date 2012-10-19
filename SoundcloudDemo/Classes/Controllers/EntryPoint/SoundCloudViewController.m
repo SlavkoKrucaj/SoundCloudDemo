@@ -21,14 +21,7 @@
 
 @implementation SoundCloudViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+#pragma mark - custom setups
 
 - (void)setupLoginView {
     self.loginView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -50,12 +43,50 @@
 
 }
 
+- (void)setupNavigationAppereance {
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBarLandscape"] forBarMetrics:UIBarMetricsLandscapePhone];
+}
+
+- (void)setupFetchedResultsController {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SoundCloudItem"];
+    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES]];
+    // no predicate because we want ALL the Photographers
+    
+    [[DocumentHandler sharedDocumentHandler] performWithDocument:^(UIManagedDocument *document){
+        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                                                            managedObjectContext:document.managedObjectContext
+                                                                              sectionNameKeyPath:nil
+                                                                                       cacheName:nil];
+        
+        if ([SCSoundCloud account]) {
+            [SoundCloudDataFetch fetchData];
+        }
+    }];
+}
+
+#pragma mark view loading
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
+    
+    [self setupNavigationAppereance];
+    [self setupFetchedResultsController];
+    [self setupLoginView];
+    
+}
+
+#pragma mark - Controller actions
+
 - (void)accountChanged {
     if ([SCSoundCloud account]) {
         [UIView animateWithDuration:0.3 animations:^{
             self.loginView.alpha = 0.;
             self.tableView.scrollEnabled = YES;
-
+            
             //setup logout button
             UIImage *image = [UIImage imageNamed:@"logout_button"];
             CGRect imageFrame = CGRectMake(0, 0, image.size.width, image.size.height);
@@ -75,20 +106,8 @@
             
             self.navigationItem.rightBarButtonItem = nil;
         }];
-    
+        
     }
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
-    
-    [self setupNavigationAppereance];
-    [self setupFetchedResultsController];
-    [self setupLoginView];
-    
 }
 
 - (void)doLogin {
@@ -123,27 +142,20 @@
 
 }
 
-- (void)setupNavigationAppereance {
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar"] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBarLandscape"] forBarMetrics:UIBarMetricsLandscapePhone];    
+- (void)startLoad {
+    
+    UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    [activity startAnimating];
+    
+    UIBarButtonItem *leftNavBbutton =[[UIBarButtonItem alloc] initWithCustomView:activity];
+    self.navigationItem.leftBarButtonItem=leftNavBbutton;
 }
 
-- (void)setupFetchedResultsController {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SoundCloudItem"];
-    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES]];
-    // no predicate because we want ALL the Photographers
-    
-    [[DocumentHandler sharedDocumentHandler] performWithDocument:^(UIManagedDocument *document){
-        self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
-                                                                            managedObjectContext:document.managedObjectContext
-                                                                              sectionNameKeyPath:nil
-                                                                                       cacheName:nil];
-        
-        if ([SCSoundCloud account]) {
-            [SoundCloudDataFetch fetchData];
-        }
-    }];
+- (void)stopLoad {
+    self.navigationItem.leftBarButtonItem = nil;
 }
+
+#pragma mark - table data source
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -155,7 +167,8 @@
     if (indexPath.row == numberOfObjects - 2) {
         [SoundCloudDataFetch fetchData];
         NSLog(@"Dohvacam podatke");
-    }
+        [self startLoad];
+    } if (indexPath.row == 0) [self stopLoad];
     
     //setup cell
     
