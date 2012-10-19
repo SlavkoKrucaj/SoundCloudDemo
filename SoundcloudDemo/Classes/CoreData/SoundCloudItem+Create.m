@@ -13,7 +13,7 @@
 static const NSString *SoundCloudTitle = @"title";
 static const NSString *SoundCloudArtwork = @"artwork_url";
 static const NSString *SoundCloudWaveform = @"waveform_url";
-static const NSString *SoundCloudDate = @"date";
+static const NSString *SoundCloudDate = @"created_at";
 static const NSString *SoundCloudId = @"id";
 
 @implementation SoundCloudItem (Create)
@@ -23,11 +23,14 @@ static const NSString *SoundCloudId = @"id";
     SoundCloudItem *item = (SoundCloudItem *)[NSEntityDescription insertNewObjectForEntityForName:@"SoundCloudItem"
                                                                            inManagedObjectContext:context];
     
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.dateFormat = @"yyyy/MM/dd HH:mm:ss ZZZ";
+
     item.name =         [data objectForKey:SoundCloudTitle];
     item.artworkUrl =   [data objectForKey:SoundCloudArtwork];
     item.waveformUrl =  [data objectForKey:SoundCloudWaveform];
     item.uniqueId =     [data objectForKey:SoundCloudId];
-    item.date =         [data objectForKey:SoundCloudDate];
+    item.date =         [df dateFromString:[data objectForKey:SoundCloudDate]];
     item.waveformImage = image;
 
 }

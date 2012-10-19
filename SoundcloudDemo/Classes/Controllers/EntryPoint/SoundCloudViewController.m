@@ -172,16 +172,18 @@
     
     //setup cell
     
-    SoundCloudCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.dateFormat = @"dd.MM.yyyy.";
     
+    SoundCloudCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     SoundCloudItem *item = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    UIFont *font = [UIFont fontWithName:@"BurstMyBubble" size:20];
 
+    UIFont *font = [UIFont fontWithName:@"BurstMyBubble" size:20];
     cell.title.font = font;
     cell.date.font = font;
 
     cell.title.text = [item.name stringByAppendingString:@"\n slavko \n jhkjh"];
-    cell.date.text = @"29.06.2012";
+    cell.date.text = [df stringFromDate:item.date];
     
     CGRect newFrame = cell.waveformWrapper.frame;
     newFrame.size.width = 0;
