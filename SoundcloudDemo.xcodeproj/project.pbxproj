@@ -72,6 +72,8 @@
 		9FC913E416319A7A007B0183 /* SoundCloudItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913E316319A79007B0183 /* SoundCloudItem+Create.m */; };
 		9FC913EB16319FE5007B0183 /* SoundCloudItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913EA16319FE5007B0183 /* SoundCloudItem.m */; };
 		9FC913EF1631A1D9007B0183 /* SoundCloudDataFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913EE1631A1D9007B0183 /* SoundCloudDataFetch.m */; };
+		9FC913F21631AD3A007B0183 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913F11631AD3A007B0183 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9FC913F41631AFF3007B0183 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC913F31631AFF3007B0183 /* arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +238,9 @@
 		9FC913EA16319FE5007B0183 /* SoundCloudItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudItem.m; sourceTree = "<group>"; };
 		9FC913ED1631A1D9007B0183 /* SoundCloudDataFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudDataFetch.h; sourceTree = "<group>"; };
 		9FC913EE1631A1D9007B0183 /* SoundCloudDataFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudDataFetch.m; sourceTree = "<group>"; };
+		9FC913F01631AD3A007B0183 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		9FC913F11631AD3A007B0183 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		9FC913F31631AFF3007B0183 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +367,8 @@
 		9F6594F11630B155009375BC /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				9FC913F01631AD3A007B0183 /* PullRefreshTableViewController.h */,
+				9FC913F11631AD3A007B0183 /* PullRefreshTableViewController.m */,
 				9FC912E81631395D007B0183 /* DocumentHandler.h */,
 				9FC912E91631395D007B0183 /* DocumentHandler.m */,
 				9F6594F21630B49B009375BC /* SoundCloudCell.h */,
@@ -375,6 +382,7 @@
 		9F6594F51630B87C009375BC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9FC913F31631AFF3007B0183 /* arrow.png */,
 				9FC912E4163133A3007B0183 /* login_button.png */,
 				9FC912E5163133A3007B0183 /* login_button@2x.png */,
 				9F6594F61630B87C009375BC /* image_holder.png */,
@@ -747,6 +755,7 @@
 				9F6594FE1630BC31009375BC /* background@2x.png in Resources */,
 				9FC912E6163133A3007B0183 /* login_button.png in Resources */,
 				9FC912E7163133A3007B0183 /* login_button@2x.png in Resources */,
+				9FC913F41631AFF3007B0183 /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,6 +811,7 @@
 				9FC913E416319A7A007B0183 /* SoundCloudItem+Create.m in Sources */,
 				9FC913EB16319FE5007B0183 /* SoundCloudItem.m in Sources */,
 				9FC913EF1631A1D9007B0183 /* SoundCloudDataFetch.m in Sources */,
+				9FC913F21631AD3A007B0183 /* PullRefreshTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

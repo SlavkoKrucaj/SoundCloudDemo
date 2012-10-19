@@ -148,6 +148,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"soundcloud_cell";
+    
+    //pagination
+    NSUInteger numberOfObjects = [[[self.fetchedResultsController sections] objectAtIndex:indexPath.section] numberOfObjects];
+    if (indexPath.row > numberOfObjects - 2) {
+        [SoundCloudDataFetch fetchData];
+        NSLog(@"Dohvacam podatke");
+    }
+    
+    //setup cell
+    
     SoundCloudCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     SoundCloudItem *item = [self.fetchedResultsController objectAtIndexPath:indexPath];
