@@ -15,6 +15,8 @@ static const NSString *SoundCloudArtwork = @"artwork_url";
 static const NSString *SoundCloudWaveform = @"waveform_url";
 static const NSString *SoundCloudDate = @"created_at";
 static const NSString *SoundCloudId = @"id";
+static const NSString *SoundCloudFavorite = @"user_favorite";
+static const NSString *SoundCloudWeb = @"permalink_url";
 
 @implementation SoundCloudItem (Create)
 
@@ -26,12 +28,16 @@ static const NSString *SoundCloudId = @"id";
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.dateFormat = @"yyyy/MM/dd HH:mm:ss ZZZ";
 
-    item.name =         [data objectForKey:SoundCloudTitle];
-    item.artworkUrl =   [data objectForKey:SoundCloudArtwork];
+    //simple hack for aligning top of name with date and image
+    item.name =         [[data objectForKey:SoundCloudTitle] stringByAppendingString:@"\n "];
+    
+    item.artworkUrl =   ([[data objectForKey:SoundCloudArtwork] class] != [NSNull class])? [data objectForKey:SoundCloudArtwork]:@"";
     item.waveformUrl =  [data objectForKey:SoundCloudWaveform];
     item.uniqueId =     [data objectForKey:SoundCloudId];
     item.date =         [df dateFromString:[data objectForKey:SoundCloudDate]];
     item.waveformImage = image;
+    item.favorite =     [data objectForKey:SoundCloudFavorite];
+    item.webUrl =       [data objectForKey:SoundCloudWeb];
 
 }
 
@@ -47,9 +53,9 @@ static const NSString *SoundCloudId = @"id";
     NSArray *matches = [context executeFetchRequest:request error:&error];
     
     //if there is this item in context return it don't create new one
-//    if ([matches count] == 1) {
-//        return;
-//    }
+    if ([matches count] == 1) {
+        return;
+    }
     
     //if it doesn't contain waveform create it without image
     if (!waveformUrl || [waveformUrl isEqualToString:@""]) {

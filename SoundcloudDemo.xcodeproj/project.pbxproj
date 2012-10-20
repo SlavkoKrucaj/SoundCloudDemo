@@ -41,7 +41,6 @@
 		9F6595231630C1E6009375BC /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6595181630C1E6009375BC /* AFURLConnectionOperation.m */; };
 		9F6595241630C1E6009375BC /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65951A1630C1E6009375BC /* AFXMLRequestOperation.m */; };
 		9F6595251630C1E6009375BC /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F65951C1630C1E6009375BC /* UIImageView+AFNetworking.m */; };
-		9F6595291630C549009375BC /* SoundCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6595271630C549009375BC /* SoundCloud.xcdatamodeld */; };
 		9F65952E1630C629009375BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F65952D1630C628009375BC /* CoreData.framework */; };
 		9F93B1CF162F1BCA0070406C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B1BF162F1BCA0070406C /* AppDelegate.m */; };
 		9F93B1D1162F1BCA0070406C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93B1C4162F1BCA0070406C /* Default-568h@2x.png */; };
@@ -63,17 +62,22 @@
 		9F93B5D0162F4CF40070406C /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F93B5CF162F4CF40070406C /* SoundCloud.bundle */; };
 		9F93B5E6162F4D4F0070406C /* libJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F93B5DA162F4D3B0070406C /* libJSONKit.a */; };
 		9F93B5F0162F4D7F0070406C /* libOHAttributedLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F93B5EF162F4D710070406C /* libOHAttributedLabel.a */; };
-		9FC912E31631237E007B0183 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC912E21631237E007B0183 /* CoreDataTableViewController.m */; };
 		9FC912E6163133A3007B0183 /* login_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC912E4163133A3007B0183 /* login_button.png */; };
 		9FC912E7163133A3007B0183 /* login_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC912E5163133A3007B0183 /* login_button@2x.png */; };
 		9FC912EA1631395D007B0183 /* DocumentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC912E91631395D007B0183 /* DocumentHandler.m */; };
 		9FC91316163155E0007B0183 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC91315163155DF007B0183 /* UIImage+Crop.m */; };
-		9FC9131C16315A5B007B0183 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9131B16315A5B007B0183 /* ImageTransformer.m */; };
-		9FC913E416319A7A007B0183 /* SoundCloudItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913E316319A79007B0183 /* SoundCloudItem+Create.m */; };
-		9FC913EB16319FE5007B0183 /* SoundCloudItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913EA16319FE5007B0183 /* SoundCloudItem.m */; };
 		9FC913EF1631A1D9007B0183 /* SoundCloudDataFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913EE1631A1D9007B0183 /* SoundCloudDataFetch.m */; };
 		9FC913F21631AD3A007B0183 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC913F11631AD3A007B0183 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9FC913F41631AFF3007B0183 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC913F31631AFF3007B0183 /* arrow.png */; };
+		9FC913FA16328557007B0183 /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC913F816328557007B0183 /* favorite.png */; };
+		9FC913FB16328557007B0183 /* favorite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC913F916328557007B0183 /* favorite@2x.png */; };
+		9FC914391632920A007B0183 /* SoundCloudItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9142D1632920A007B0183 /* SoundCloudItem+Create.m */; };
+		9FC9143A1632920A007B0183 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC914301632920A007B0183 /* CoreDataTableViewController.m */; };
+		9FC9143B1632920A007B0183 /* SoundCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FC914321632920A007B0183 /* SoundCloud.xcdatamodeld */; };
+		9FC9143C1632920A007B0183 /* SoundCloudItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC914351632920A007B0183 /* SoundCloudItem.m */; };
+		9FC9143D1632920A007B0183 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC914381632920A007B0183 /* ImageTransformer.m */; };
+		9FC91441163298C4007B0183 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC91440163298C4007B0183 /* Icon@2x.png */; };
+		9FC91443163298C7007B0183 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC91442163298C7007B0183 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,7 +202,6 @@
 		9F65951A1630C1E6009375BC /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		9F65951B1630C1E6009375BC /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		9F65951C1630C1E6009375BC /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		9F6595281630C549009375BC /* SoundCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundCloud.xcdatamodel; sourceTree = "<group>"; };
 		9F65952D1630C628009375BC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9F93B1BE162F1BCA0070406C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F93B1BF162F1BCA0070406C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -222,25 +225,30 @@
 		9F93B5CF162F4CF40070406C /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = SOURCE_ROOT; };
 		9F93B5D1162F4D3B0070406C /* JSONKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONKit.xcodeproj; path = JSONKit/JSONKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9F93B5E7162F4D710070406C /* OHAttributedLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OHAttributedLabel.xcodeproj; path = OHAttributedLabel/OHAttributedLabel.xcodeproj; sourceTree = SOURCE_ROOT; };
-		9FC912E11631237E007B0183 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
-		9FC912E21631237E007B0183 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		9FC912E4163133A3007B0183 /* login_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_button.png; sourceTree = "<group>"; };
 		9FC912E5163133A3007B0183 /* login_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_button@2x.png"; sourceTree = "<group>"; };
 		9FC912E81631395D007B0183 /* DocumentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentHandler.h; sourceTree = "<group>"; };
 		9FC912E91631395D007B0183 /* DocumentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentHandler.m; sourceTree = "<group>"; };
 		9FC91314163155DF007B0183 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
 		9FC91315163155DF007B0183 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
-		9FC9131A16315A5B007B0183 /* ImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformer.h; sourceTree = "<group>"; };
-		9FC9131B16315A5B007B0183 /* ImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformer.m; sourceTree = "<group>"; };
-		9FC913E216319A79007B0183 /* SoundCloudItem+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SoundCloudItem+Create.h"; sourceTree = "<group>"; };
-		9FC913E316319A79007B0183 /* SoundCloudItem+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SoundCloudItem+Create.m"; sourceTree = "<group>"; };
-		9FC913E916319FE4007B0183 /* SoundCloudItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudItem.h; sourceTree = "<group>"; };
-		9FC913EA16319FE5007B0183 /* SoundCloudItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudItem.m; sourceTree = "<group>"; };
 		9FC913ED1631A1D9007B0183 /* SoundCloudDataFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudDataFetch.h; sourceTree = "<group>"; };
 		9FC913EE1631A1D9007B0183 /* SoundCloudDataFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudDataFetch.m; sourceTree = "<group>"; };
 		9FC913F01631AD3A007B0183 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
 		9FC913F11631AD3A007B0183 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
 		9FC913F31631AFF3007B0183 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		9FC913F816328557007B0183 /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		9FC913F916328557007B0183 /* favorite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite@2x.png"; sourceTree = "<group>"; };
+		9FC9142C1632920A007B0183 /* SoundCloudItem+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SoundCloudItem+Create.h"; sourceTree = "<group>"; };
+		9FC9142D1632920A007B0183 /* SoundCloudItem+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SoundCloudItem+Create.m"; sourceTree = "<group>"; };
+		9FC9142F1632920A007B0183 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		9FC914301632920A007B0183 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		9FC914331632920A007B0183 /* SoundCloud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundCloud.xcdatamodel; sourceTree = "<group>"; };
+		9FC914341632920A007B0183 /* SoundCloudItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudItem.h; sourceTree = "<group>"; };
+		9FC914351632920A007B0183 /* SoundCloudItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudItem.m; sourceTree = "<group>"; };
+		9FC914371632920A007B0183 /* ImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformer.h; sourceTree = "<group>"; };
+		9FC914381632920A007B0183 /* ImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformer.m; sourceTree = "<group>"; };
+		9FC91440163298C4007B0183 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		9FC91442163298C7007B0183 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +390,8 @@
 		9F6594F51630B87C009375BC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9FC913F816328557007B0183 /* favorite.png */,
+				9FC913F916328557007B0183 /* favorite@2x.png */,
 				9FC913F31631AFF3007B0183 /* arrow.png */,
 				9FC912E4163133A3007B0183 /* login_button.png */,
 				9FC912E5163133A3007B0183 /* login_button@2x.png */,
@@ -429,15 +439,10 @@
 		9F6595261630C532009375BC /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				9FC912E11631237E007B0183 /* CoreDataTableViewController.h */,
-				9FC912E21631237E007B0183 /* CoreDataTableViewController.m */,
-				9F6595271630C549009375BC /* SoundCloud.xcdatamodeld */,
-				9FC913E916319FE4007B0183 /* SoundCloudItem.h */,
-				9FC913EA16319FE5007B0183 /* SoundCloudItem.m */,
-				9FC9131A16315A5B007B0183 /* ImageTransformer.h */,
-				9FC9131B16315A5B007B0183 /* ImageTransformer.m */,
-				9FC913E216319A79007B0183 /* SoundCloudItem+Create.h */,
-				9FC913E316319A79007B0183 /* SoundCloudItem+Create.m */,
+				9FC9142B1632920A007B0183 /* Categories */,
+				9FC9142E1632920A007B0183 /* CoreDataTableView */,
+				9FC914311632920A007B0183 /* Model */,
+				9FC914361632920A007B0183 /* Transformers */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -448,6 +453,8 @@
 				9F93B1CA162F1BCA0070406C /* MainStoryboard.storyboard */,
 				9F93B5A7162F4C4A0070406C /* Vendor */,
 				9F93B1BC162F1BCA0070406C /* Classes */,
+				9FC91442163298C7007B0183 /* Icon.png */,
+				9FC91440163298C4007B0183 /* Icon@2x.png */,
 				9F93B1C4162F1BCA0070406C /* Default-568h@2x.png */,
 				9F93B1C5162F1BCA0070406C /* Default.png */,
 				9F93B1C6162F1BCA0070406C /* Default@2x.png */,
@@ -570,6 +577,43 @@
 				9FC913EE1631A1D9007B0183 /* SoundCloudDataFetch.m */,
 			);
 			path = DataUtility;
+			sourceTree = "<group>";
+		};
+		9FC9142B1632920A007B0183 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9FC9142C1632920A007B0183 /* SoundCloudItem+Create.h */,
+				9FC9142D1632920A007B0183 /* SoundCloudItem+Create.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9FC9142E1632920A007B0183 /* CoreDataTableView */ = {
+			isa = PBXGroup;
+			children = (
+				9FC9142F1632920A007B0183 /* CoreDataTableViewController.h */,
+				9FC914301632920A007B0183 /* CoreDataTableViewController.m */,
+			);
+			path = CoreDataTableView;
+			sourceTree = "<group>";
+		};
+		9FC914311632920A007B0183 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FC914321632920A007B0183 /* SoundCloud.xcdatamodeld */,
+				9FC914341632920A007B0183 /* SoundCloudItem.h */,
+				9FC914351632920A007B0183 /* SoundCloudItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FC914361632920A007B0183 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				9FC914371632920A007B0183 /* ImageTransformer.h */,
+				9FC914381632920A007B0183 /* ImageTransformer.m */,
+			);
+			path = Transformers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -756,6 +800,10 @@
 				9FC912E6163133A3007B0183 /* login_button.png in Resources */,
 				9FC912E7163133A3007B0183 /* login_button@2x.png in Resources */,
 				9FC913F41631AFF3007B0183 /* arrow.png in Resources */,
+				9FC913FA16328557007B0183 /* favorite.png in Resources */,
+				9FC913FB16328557007B0183 /* favorite@2x.png in Resources */,
+				9FC91441163298C4007B0183 /* Icon@2x.png in Resources */,
+				9FC91443163298C7007B0183 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,15 +851,15 @@
 				9F6595231630C1E6009375BC /* AFURLConnectionOperation.m in Sources */,
 				9F6595241630C1E6009375BC /* AFXMLRequestOperation.m in Sources */,
 				9F6595251630C1E6009375BC /* UIImageView+AFNetworking.m in Sources */,
-				9F6595291630C549009375BC /* SoundCloud.xcdatamodeld in Sources */,
-				9FC912E31631237E007B0183 /* CoreDataTableViewController.m in Sources */,
 				9FC912EA1631395D007B0183 /* DocumentHandler.m in Sources */,
 				9FC91316163155E0007B0183 /* UIImage+Crop.m in Sources */,
-				9FC9131C16315A5B007B0183 /* ImageTransformer.m in Sources */,
-				9FC913E416319A7A007B0183 /* SoundCloudItem+Create.m in Sources */,
-				9FC913EB16319FE5007B0183 /* SoundCloudItem.m in Sources */,
 				9FC913EF1631A1D9007B0183 /* SoundCloudDataFetch.m in Sources */,
 				9FC913F21631AD3A007B0183 /* PullRefreshTableViewController.m in Sources */,
+				9FC914391632920A007B0183 /* SoundCloudItem+Create.m in Sources */,
+				9FC9143A1632920A007B0183 /* CoreDataTableViewController.m in Sources */,
+				9FC9143B1632920A007B0183 /* SoundCloud.xcdatamodeld in Sources */,
+				9FC9143C1632920A007B0183 /* SoundCloudItem.m in Sources */,
+				9FC9143D1632920A007B0183 /* ImageTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,7 +932,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -905,7 +953,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1011,12 +1059,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9F6595271630C549009375BC /* SoundCloud.xcdatamodeld */ = {
+		9FC914321632920A007B0183 /* SoundCloud.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9F6595281630C549009375BC /* SoundCloud.xcdatamodel */,
+				9FC914331632920A007B0183 /* SoundCloud.xcdatamodel */,
 			);
-			currentVersion = 9F6595281630C549009375BC /* SoundCloud.xcdatamodel */;
+			currentVersion = 9FC914331632920A007B0183 /* SoundCloud.xcdatamodel */;
 			path = SoundCloud.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

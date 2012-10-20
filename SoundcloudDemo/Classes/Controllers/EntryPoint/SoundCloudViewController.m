@@ -50,7 +50,7 @@
 
 - (void)setupFetchedResultsController {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SoundCloudItem"];
-    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:YES]];
+    request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO]];
     // no predicate because we want ALL the Photographers
     
     [[DocumentHandler sharedDocumentHandler] performWithDocument:^(UIManagedDocument *document){
@@ -59,9 +59,7 @@
                                                                               sectionNameKeyPath:nil
                                                                                        cacheName:nil];
         
-        if ([SCSoundCloud account]) {
-            [SoundCloudDataFetch fetchData];
-        }
+        [self fetchData];
     }];
 }
 
@@ -123,7 +121,7 @@
                                                                               NSLog(@"Ooops, something went wrong: %@", [error localizedDescription]);
                                                                           } else {
                                                                               [self accountChanged];
-                                                                              [SoundCloudDataFetch fetchData];
+                                                                              [self fetchData];
                                                                           }
                                                                       }];
         
@@ -155,7 +153,14 @@
     self.navigationItem.leftBarButtonItem = nil;
 }
 
-#pragma mark - table data source
+#pragma mark - data source
+
+- (void)fetchData {
+    if ([SCSoundCloud account]) {
+        [[SoundCloudDataFetch dataFetcher] fetchFavorites];
+        [[SoundCloudDataFetch dataFetcher] fetchNewActivities];
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -163,26 +168,34 @@
     
     //pagination
     NSUInteger numberOfObjects = [[[self.fetchedResultsController sections] objectAtIndex:indexPath.section] numberOfObjects];
-    //dodaj limit/2 toliki je offset za paginaciju
-    if (indexPath.row == numberOfObjects - 2) {
-        [SoundCloudDataFetch fetchData];
-        NSLog(@"Dohvacam podatke");
+    if (indexPath.row == numberOfObjects - 1) {
         [self startLoad];
-    } if (indexPath.row == 0) [self stopLoad];
+        [[SoundCloudDataFetch dataFetcher] fetchNextPageActivitiesWithTarget:self andSelector:@selector(stopLoad)];
+    }
     
     //setup cell
     
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.dateFormat = @"dd.MM.yyyy.";
     
-    SoundCloudCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    SoundCloudCell *cell = nil;
+    if (![self.tableView respondsToSelector:@selector(tableView:dequeueReusableCellWithIdentifier:forIndexPath:)]) {
+        cell = (SoundCloudCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:CellIdentifier owner:self options:nil];
+            cell = [topLevelObjects objectAtIndex:0];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    }
     SoundCloudItem *item = [self.fetchedResultsController objectAtIndexPath:indexPath];
 
     UIFont *font = [UIFont fontWithName:@"BurstMyBubble" size:20];
     cell.title.font = font;
     cell.date.font = font;
 
-    cell.title.text = [item.name stringByAppendingString:@"\n slavko \n jhkjh"];
+    cell.title.text = item.name;
     cell.date.text = [df stringFromDate:item.date];
     
     CGRect newFrame = cell.waveformWrapper.frame;
@@ -191,9 +204,25 @@
 
     [cell setArtworkForUrl:item.artworkUrl];
     
+    cell.favoriteView.hidden = !item.favorite.boolValue;
     [cell setWaveformForUrl:item.waveformUrl forSoundCloudItem:item];
     
     return cell;
+}
+
+#pragma mark table delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    SoundCloudItem *item = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    NSString *applicationUrl = [NSString stringWithFormat:@"soundcloud:tracks:%@",item.uniqueId];
+    
+    BOOL result = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:applicationUrl]];
+    
+    if (result == 0) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:item.webUrl]];
+    }
+    
 }
 
 @end

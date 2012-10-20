@@ -16,6 +16,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *waveform;
 @property (nonatomic, weak) IBOutlet UIImageView *artwork;
 @property (nonatomic, weak) IBOutlet UIView *waveformWrapper;
+@property (nonatomic, weak) IBOutlet UIImageView *favoriteView;
 
 - (void)setArtworkForUrl:(NSString *)url;
 - (void)setWaveformForUrl:(NSString *)url forSoundCloudItem:(SoundCloudItem *)item;

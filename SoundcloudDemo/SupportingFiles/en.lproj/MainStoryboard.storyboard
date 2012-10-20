@@ -27,7 +27,7 @@
                                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f9T-UG-BVQ">
-                                            <rect key="frame" x="250" y="10" width="60" height="21"/>
+                                            <rect key="frame" x="243" y="10" width="67" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -60,6 +60,10 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="favorite.png" id="SGB-cf-BRa">
+                                            <rect key="frame" x="269" y="36" width="15" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -67,6 +71,7 @@
                                 <connections>
                                     <outlet property="artwork" destination="OKS-oB-oCq" id="Ds3-ka-xNj"/>
                                     <outlet property="date" destination="f9T-UG-BVQ" id="RsA-E6-XsA"/>
+                                    <outlet property="favoriteView" destination="SGB-cf-BRa" id="acz-Hv-f3G"/>
                                     <outlet property="title" destination="pUm-Pv-oT8" id="MrC-Ug-nTs"/>
                                     <outlet property="waveform" destination="ps5-yc-xeH" id="PYc-s3-ujt"/>
                                     <outlet property="waveformWrapper" destination="FhX-Sy-fAo" id="nt2-ll-Rdv"/>
@@ -104,17 +109,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="favorite.png" width="15" height="15"/>
         <image name="image_holder.png" width="50" height="50"/>
     </resources>
     <classes>
-        <class className="CoreDataTableViewController" superclassName="UITableViewController">
+        <class className="CoreDataTableViewController" superclassName="PullRefreshTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CoreDataTableViewController.h"/>
+        </class>
+        <class className="PullRefreshTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PullRefreshTableViewController.h"/>
         </class>
         <class className="SoundCloudCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SoundCloudCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="artwork" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="date" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="favoriteView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="title" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="waveform" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="waveformWrapper" candidateClass="UIView"/>

@@ -2,7 +2,7 @@
 //  SoundCloudItem.m
 //  SoundcloudDemo
 //
-//  Created by Slavko Krucaj on 19.10.2012..
+//  Created by Slavko Krucaj on 20.10.2012..
 //  Copyright (c) 2012. slavko.krucaj. All rights reserved.
 //
 
@@ -18,5 +18,6 @@
 @dynamic uniqueId;
 @dynamic waveformImage;
 @dynamic waveformUrl;
+@dynamic webUrl;
 
 @end

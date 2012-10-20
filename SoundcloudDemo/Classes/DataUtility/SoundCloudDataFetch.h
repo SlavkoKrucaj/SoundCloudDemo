@@ -10,6 +10,14 @@
 
 @interface SoundCloudDataFetch : NSObject
 
-+ (void)fetchData;
++ (SoundCloudDataFetch *)dataFetcher;
+
+/*
+    fetchets new Activities, after completion it calls [target selector];
+*/
+- (void)fetchNewActivities;
+- (void)fetchNextPageActivitiesWithTarget:(id)target andSelector:(SEL)selector;
+
+- (void)fetchFavorites;
 
 @end
